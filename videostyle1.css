@@ -1,0 +1,253 @@
+body{
+  background-color: black;
+}
+t{
+  font-size:70px;
+  font-family: 'Verdana', Helvetica, sans-serif;
+
+  font-weight: bold;
+  color:white;
+  margin-bottom: 200px;
+
+}
+
+#backgroundVideo{
+  position:fixed;
+  right:0;
+  bottom:0;
+  min-width: 100%;
+  min-height: 100%;
+  /* width: auto;
+  height: auto; */
+  width:auto;
+  height: 120%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  visibility:hidden;
+}
+
+.btn {
+  border:none;
+  background:none;
+  box-shadow:1px 1px 2px rgba(21, 21, 21, 0.1);
+  cursor:pointer;
+  font-size:15px;
+  font-family: 'Dosis', sans-serif;
+  margin:0 1rem;
+  padding:.25rem 2rem;
+  transition:all .25s ease-in-out;
+}
+.btn:focus, .btn:hover {
+  box-shadow:1px 1px 2px rgba(21, 21, 21, 0.2);
+}
+.btn-normal {
+  background:hsl(0, 0%, 92%);
+  color:hsl(0, 0%, 23%);
+}
+.btn-normal:hover {
+  background:hsl(0, 0%, 50%);
+}
+
+#myBtn {
+  width: 150px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.myBtn {
+  width: 150px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+.countdown{
+  width: 200px;
+  font-size: 18px;
+  background: #000;
+  color: #fff;
+}
+
+.modal-content{
+  background-color:rgba(0,0,0,0.5);
+  display:flex;
+  flex-direction:column;
+
+}
+tt{
+  color:white;
+  font-size:30px;
+  font-family: 'Dosis', sans-serif;
+
+  display:block;
+
+}
+.modal-body{
+  bottom:0;
+
+
+}
+#popup{
+  bottom:0;
+}
+
+
+
+
+
+/*  就是这一部分！！！*/
+#arrow{
+width:150px;
+left: 500px;
+
+}
+#arrowimg {
+  width: 100px;
+  left:550px;
+  position:relative;
+
+}
+
+.bar {
+  width: 100%;
+  display: block;
+  bottom: 1px;
+  position: fixed;
+  text-align:center;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.bar:hover .content {
+    bottom:0;
+    left:0;
+    visibility:visible;
+    width:100%;
+    height:10%;
+}
+.bar:hover #arrowimg{
+  visibility: hidden;
+}
+
+
+
+
+
+
+.header-bg {
+            position: fixed;
+            top:0;
+            left:0;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            background-image:url("bg.gif");
+        }
+.header-bg h2 {
+                    margin: 60px;
+                    padding: 0;
+                    color: white;
+                    text-align: center;
+                    padding: 20px;
+                    max-width: 80%;
+                }
+
+                section {
+                    position: relative;
+                    top:100vh;
+                    padding: 100px;
+                    width: 100%;
+                    min-height: 100vh;
+                    box-sizing: border-box;
+                }
+                section h2 {
+                    text-align:center;
+                    margin: 0 0 50px;
+                    padding: 0;
+                    font-size: 40px;
+                    color: #fff;
+                }
+                section p {
+                    text-align:center;
+                    color: #fff;
+                    font-size: 1.3em;
+                }
+
+
+
+
+
+                @import url(https://fonts.googleapis.com/css?family=Lato:100);
+
+                #container{
+
+
+                }
+
+                #circle{
+                  /*   display: inline-block;
+               margin-left: 30em;
+                  margin-bottom: 1.2em;
+                  position:fixed;  */
+
+                  top:90%;
+                  width:6em;
+                  height:6em;
+                  border-radius:50%;
+                  background-color:rgba(255,255,255,0);
+                  border: 0.185em solid rgba(255,255,255,1);
+                  -webkit-animation: pulse 2s linear infinite;
+                }
+                #center{
+                  margin-top:0.2em;
+                  margin-left:auto;
+                  margin-right:auto;
+                  width:5.5em;
+                  height:5.5em;
+                  background-color:rgba(255,255,255,0);
+                  border: 0.1em solid rgba(255,255,255,1);
+                  border-radius:50%;
+                  -webkit-animation: pulse 2s linear infinite;
+                }
+
+                @-webkit-keyframes pulse{
+                  0%{
+                    transform:scale(1,1);
+                    opacity:0.1;
+                }
+                  20%{
+                    transform:scale(1.10,1.10);
+                    opacity:1;
+                  }
+                  90%{
+                    transform:scale(1.5,1.5);
+                    opacity:0;
+                  }
+                  100%{
+                    opacity:0;
+                  }
+                }
